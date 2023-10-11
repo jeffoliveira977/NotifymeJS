@@ -31,16 +31,16 @@ window.onload = function () {
     };
     
     NotifymeJS({
-      message: "This is an information notification.", // display message
-      customStyles: customStyles, // custom css style for notification container
-      type: "info",   // type are: info, success, error, warning, notify
-      title: "Info", // notification title
-      duration: 3000, // notification duration in ms
-      position: "bottomright", // positions are: topleft, topright, bottomleft, bottomright, topcenter and bottomcenter
-      showAnimation: "slideup", // animations are: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
-      showDuration: 0.2, // show animation duration in seconds
-      hideAnimation: "slideup", // animations are: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
-      hideDuration: 0.2 // hide animation duration in seconds
+      message: "This is an information notification.", // Display message
+      customStyles: customStyles, // Custom CSS styles for the notification container
+      type: "info",   // Types: info, success, error, warning, notify
+      title: "Info", // Notification title
+      duration: 3000, // Notification duration in milliseconds
+      position: "bottomright", // Positions: topleft, topright, bottomleft, bottomright, topcenter and bottomcenter
+      showAnimation: "slideup", // Animations: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
+      showDuration: 0.2, // Show animation duration in seconds
+      hideAnimation: "slideup", // Animations: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
+      hideDuration: 0.2 // Hide animation duration in seconds
     });
   };
 
