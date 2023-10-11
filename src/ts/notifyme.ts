@@ -1,10 +1,8 @@
 import { getIcon } from "./icons";
 import { slideUp, slideDown } from "./slideAnimation";
 
-//import { gsap } from "gsap";
 declare var gsap : any;
 type GSAPCallback = any;
-type GSAPTweenVars = any;
 
 import "../scss/notifyme.scss";
 
@@ -312,13 +310,13 @@ class Notifyme {
 
     const dir = direction === "up" || direction === "right" ? 1 : -1;
 
-    const fromProps: GSAPTweenVars = {
+    const fromProps: any = {
       duration,
       opacity: isFadeIn ? 0 : 1,
       ease: isFadeIn ? "power1.in" : "power1.out"
     };
 
-    const toProps: GSAPTweenVars = {
+    const toProps: any = {
       duration,
       opacity: isFadeIn ? 1 : 0,
       ease: isFadeIn ? "power1.in" : "power1.out",

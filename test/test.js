@@ -23,24 +23,24 @@ window.onload = function () {
     
     const customStyles = {
       containerStyle: {
-        "background-color": randomColorRGB,
         "border-radius": "10px"
       },
       fontStyle: {
-        color: inverseRandomColorRGB
+        color: "rgb(255, 255, 255)"
       }
     };
     
     NotifymeJS({
-      message: message,customStyles: customStyles,
-      type: type,
-      title: type,
-      duration: -1,
-      position: "bottomright",
-      showAnimation: "slideup",
-      showDuration: 0.2,
-      hideAnimation: "slideup",
-      hideDuration: 0.2
+      message: "This is an information notification.", // display message
+      customStyles: customStyles, // custom css style for notification container
+      type: "info",   // type are: info, success, error, warning, notify
+      title: "Info", // notification title
+      duration: 3000, // notification duration in ms
+      position: "bottomright", // positions are: topleft, topright, bottomleft, bottomright, topcenter and bottomcenter
+      showAnimation: "slideup", // animations are: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
+      showDuration: 0.2, // show animation duration in seconds
+      hideAnimation: "slideup", // animations are: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
+      hideDuration: 0.2 // hide animation duration in seconds
     });
   };
 
