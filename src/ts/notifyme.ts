@@ -345,7 +345,6 @@ class Notifyme {
     const animationType = this.content.showAnimation?.slice(4);
 
     if (animationType) {
-      // Call the animateContainer function with parameters for a fade-in animation
       this.animateContainer(animationType, duration, true, callback);
     }
   }
@@ -359,9 +358,7 @@ class Notifyme {
     const duration = this.content.hideDuration ?? 0.2;
     const animationType = this.content.hideAnimation?.slice(4);
 
-    // Check if animationType is defined before using it
     if (animationType) {
-      // Call the animateContainer function with parameters for a fade-out animation
       this.animateContainer(animationType, duration, false, callback);
     }
   }
