@@ -14,7 +14,7 @@ NotifymeJS is an advanced and fully customizable notification plugin. It offers 
 ```html
 <script src="../lib/GSAP/dist/gsap.js"></script>
 ```
-Include the Notifyme library. Now, include the Notifyme library to enable the notifications
+Now, include the Notifyme library to enable the notifications
 
 ```html
 <script src="../dist/js/notifyme.js"></script>
