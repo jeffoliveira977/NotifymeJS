@@ -259,35 +259,27 @@ class Notifyme {
    * @param {string} position - The desired position.
    */
   private position(wrapper: HTMLElement | null, position: string) {
-    if (wrapper) {
-      switch (position) {
-        case "topleft":
-        case "topright":
-        case "topcenter":
-          wrapper.style.top = "0";
-          if (position === "topleft") {
-            wrapper.style.left = "0";
-          } else if (position === "topright") {
-            wrapper.style.right = "0";
-          } else {
-            wrapper.style.left = "50%";
-            wrapper.style.transform = "translateX(-50%)";
-          }
-          break;
-        case "bottomleft":
-        case "bottomright":
-        case "bottomcenter":
-          wrapper.style.bottom = "0";
-          if (position === "bottomleft") {
-            wrapper.style.left = "0";
-          } else if (position === "bottomright") {
-            wrapper.style.right = "0";
-          } else {
-            wrapper.style.left = "50%";
-            wrapper.style.transform = "translateX(-50%)";
-          }
-          break;
-      }
+    if (!wrapper) {
+      return;
+    }
+  
+    const isTopPosition = position.startsWith("top");
+    const isLeftPosition = position.endsWith("left");
+    const isRightPosition = position.endsWith("right");
+  
+    if (isTopPosition) {
+      wrapper.style.top = "0";
+    } else {
+      wrapper.style.bottom = "0";
+    }
+  
+    if (isLeftPosition) {
+      wrapper.style.left = "0";
+    } else if (isRightPosition) {
+      wrapper.style.right = "0";
+    } else {
+      wrapper.style.left = "50%";
+      wrapper.style.transform = "translateX(-50%)";
     }
   }
 
