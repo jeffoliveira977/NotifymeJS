@@ -4,19 +4,17 @@ NotifymeJS is an advanced and fully customizable notification plugin. It offers 
 
 ## How to Use
 
-1. Add the following CSS to your HTML file to style the notifications:
-
-```html
-<link href="../dist/css/notifyme.css" rel="stylesheet" />
-```
-[Include the GSAP library](https://github.com/greensock/GSAP)
+1. [Include the GSAP library](https://github.com/greensock/GSAP)
 
 ```html
 <script src="../lib/GSAP/dist/gsap.js"></script>
 ```
-Now, include the Notifyme library to enable the notifications
+
+
+2. And add the following CSS and JS to your HTML file to style the notifications:
 
 ```html
+<link href="../notifyme.css" rel="stylesheet" />
 <script src="../dist/js/notifyme.js"></script>
 ```
 
@@ -41,8 +39,8 @@ NotifymeJS({
   title: "Info", // Notification title
   duration: 3000, // Notification duration in milliseconds
   position: "bottomright", // Positions: topleft, topright, bottomleft, bottomright, topcenter and bottomcenter
-  showAnimation: "slideup", // Animations: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
+  showAnimation: "slideup", // Animations: fadein,, slideup, bounceright and bounceleft
   showDuration: 0.2, // Show animation duration in seconds
-  hideAnimation: "slideup", // Animations: fadein, fadeout, slideup, slidedown, bounceright and bounceleft
+  hideAnimation: "slideup", // Animations: fadeout, slidedown, bounceright and bounceleft
   hideDuration: 0.2 // Hide animation duration in seconds
 });
